@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "No Attention",
+  "description": "Hide facebook images that are just there to grab my attention",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": ["https://mbasic.facebook.com/*"],
+      "js": ["mbasic.js"]
+    }
+  ]
+}
