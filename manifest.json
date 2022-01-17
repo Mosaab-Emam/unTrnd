@@ -1,12 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "No Attention",
-  "description": "Hide facebook images that are just there to grab my attention",
-  "version": "1.0.0",
+  "name": "unTrnd",
+  "description": "Hide trending content on facebook",
+  "version": "1.1.0",
   "content_scripts": [
     {
       "matches": ["https://mbasic.facebook.com/*"],
       "js": ["mbasic.js"]
+    },
+    {
+      "matches": [
+        "https://facebook.com/*",
+        "https://www.facebook.com/*",
+        "https://web.facebook.com/*"
+      ],
+      "js": [
+        "web.js"
+      ]
     }
   ]
 }
